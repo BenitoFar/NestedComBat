@@ -14,6 +14,7 @@ The tool performs harmonization at the **feature level**, aligning radiomic feat
 The tool operates in both **training mode** (to estimate harmonization parameters) and **test mode** (to apply the harmonization model to new data) The tool expects a specific folder structure and input files, which differ slightly depending on the mode:
 
 ### Folder Structure
+```bash
 project_directory/
 ├── input_train/
 │ ├── radiomics.csv # Radiomic features per patient
@@ -22,7 +23,8 @@ project_directory/
 │ └── config.yaml # Configuration file specifying harmonization settings
 ├── input_test/ # (Only for test mode)
 │ └── radiomics.csv # New radiomic features to harmonize using trained model
-
+├── output/
+```
 
 ### File Descriptions
 
@@ -63,6 +65,18 @@ The output will include:
 
 ---
 
+## 🐳 Docker
+
+This tool is containerized using Docker. You can build and run the Docker image as follows:
+
+#### Build the image
+docker build -t nested-combat .
+
+#### Run the container
+docker run -v /path/to/data:/app/input -v /path/to/output:/app/output nested-combat
+
+---
+
 ## 🚀 Installation
 
 Clone the repository and install dependencies:
@@ -71,17 +85,7 @@ Clone the repository and install dependencies:
 git clone https://github.com/yourusername/nested-combat.git
 cd nested-combat
 pip install -r requirements.txt
-
----
-
-## 🐳 Docker
-This tool is containerized using Docker. You can build and run the Docker image as follows:
-
-# Build the image
-docker build -t nested-combat .
-
-# Run the container
-docker run -v /path/to/data:/app/input -v /path/to/output:/app/output nested-combat
+```
 
 ---
 

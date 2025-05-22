@@ -82,8 +82,8 @@ docker run -v /path/to/data:/app/input -v /path/to/output:/app/output nested-com
 Clone the repository and install dependencies:
 
 ```bash
-git clone https://github.com/yourusername/nested-combat.git
-cd nested-combat
+git clone https://github.com/BenitoFar/NestedComBat.git
+cd NestedComBat
 pip install -r requirements.txt
 ```
 

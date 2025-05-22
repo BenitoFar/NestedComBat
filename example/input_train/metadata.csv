@@ -1,0 +1,3 @@
+PatientID,date,Manufacturer,KVP,Pixel_Spacing,Slice_Thickness,Contrast,PrimaryTumor,Center,progression,progression_type,dead,stage,sex,smoking_habit,OS,PFS
+1,20160202,SIEMENS,120,0.72852,5,1,1,CUN,1,rad,1,IV,M,1,3,1.033333333
+2,20160826,SIEMENS,120,0.70898,5,1,1,CUN,1,rad,0,IV,M,1,45.9,36.63333333

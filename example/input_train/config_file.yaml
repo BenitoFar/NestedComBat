@@ -1,0 +1,5 @@
+mode: 'train'
+batch_col: ['Manufacturer', 'Slice_Thickness', 'KVP']
+bio_col: ['sex']
+discard_batch_dependent_features: True
+reference_batch: True

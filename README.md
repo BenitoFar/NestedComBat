@@ -95,12 +95,14 @@ docker run -v /path/to/data:/app/input -v /path/to/output:/app/output NestedComB
 An example dataset and config file are provided in the examples/ directory. You can test the tool as follows:
 
 ```bash
-python run.py --mode train --input_dir ./examples/input_train --output_dir ./output ```
+python run.py --mode train --input_dir ./examples/input_train --output_dir ./output
+```
 
 For test mode (after training):
 
 ```bash
-python main.py --mode test --input_dir ./examples/input_test --output_dir ./output  ```
+python main.py --mode test --input_dir ./examples/input_test --output_dir ./output
+```
 
 ---
 

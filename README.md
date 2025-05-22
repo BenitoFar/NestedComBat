@@ -19,10 +19,11 @@ project_directory/
 ├── input_train/
 │ ├── radiomics.csv # Radiomic features per patient
 │ └── metadata.csv # Acquisition metadata (e.g., manufacturer, slice thickness, etc.)
-├── config/
 │ └── config.yaml # Configuration file specifying harmonization settings
 ├── input_test/ # (Only for test mode)
 │ └── radiomics.csv # New radiomic features to harmonize using trained model
+│ └── metadata.csv # Acquisition metadata (e.g., manufacturer, slice thickness, etc.)
+│ └── config.yaml # Configuration file specifying harmonization settings
 ├── output/
 ```
 
